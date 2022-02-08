@@ -71,12 +71,29 @@
   <table id="maptable" class="display"></table>
 
   <script type="text/javascript">
+    
+          	var satellite   =L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        }),
+        		marine  = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
+            	attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
+            });
+    
     var map = L.map('map', {
       attributionControl: false,
       zoomControl: false,
       scrollWheelZoom: false,
       tap: false
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
+    
+    var baseLayers = {
+        	"Ocean basemap": marine,
+           "Satellite": satellite
+              	};
+    
+    L.control.layers(baseLayers).addTo(map);
+
+    
   </script>
 
   <script type="text/javascript" src="./google-doc-url.js"></script>

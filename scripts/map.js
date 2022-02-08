@@ -924,7 +924,8 @@ $(window).on('load', function() {
 
   /**
    * Loads the basemap and adds it to the map
-
+*/
+  
   function addBaseMap() {
     var basemap = trySetting('_tileProvider', 'CartoDB.Positron');
     L.tileLayer.provider(basemap, {
@@ -934,7 +935,6 @@ $(window).on('load', function() {
       position: trySetting('_mapAttribution', 'bottomright')
     }).addTo(map);
   }
-*/
   
   /**
    * Returns the value of a setting s

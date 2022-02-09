@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "transekty",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "pracownia": "ZEM_PFBP" }, "geometry": { "type": "LineString", "coordinates": [ [ 15.365051084067034, 76.93404236171483 ], [ 15.770211547555375, 76.983200602116895 ], [ 15.99467157103901, 77.001094808935164 ], [ 16.228306150077746, 76.980308982381032 ], [ 16.315040190858127, 76.989668769717525 ], [ 16.499996723774469, 77.008238029029712 ], [ 16.576079747953262, 77.052385041853455 ] ] } },
+{ "type": "Feature", "properties": { "id": 2, "pracownia": "ZEM_PFBP" }, "geometry": { "type": "LineString", "coordinates": [ [ 15.357011440200449, 76.934280973951815 ], [ 12.865447998651073, 76.613505472028336 ] ] } },
+{ "type": "Feature", "properties": { "id": 3, "pracownia": "ZEM_PFBP" }, "geometry": { "type": "LineString", "coordinates": [ [ 13.747126711669258, 76.427365045892742 ], [ 15.433171604538932, 76.678504496473792 ] ] } },
+{ "type": "Feature", "properties": { "id": 4, "pracownia": "ZEM_PFBP" }, "geometry": { "type": "LineString", "coordinates": [ [ 15.767967198684191, 76.595827520985679 ], [ 14.037463822895942, 76.321272376439239 ] ] } },
+{ "type": "Feature", "properties": { "id": 5, "pracownia": "ZEM_PFBP" }, "geometry": { "type": "LineString", "coordinates": [ [ 14.937473743294314, 76.320393393220428 ], [ 16.108816407097446, 76.444422307874859 ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "pracownia": "ZEM_PFBP" }, "geometry": { "type": "LineString", "coordinates": [ [ 7.774367631628238, 78.911857759065441 ], [ 10.502436350518259, 79.005670611203811 ], [ 11.14482117152896, 79.041798217932595 ], [ 12.459523861605286, 78.887061972352285 ] ] } }
+]
+}
